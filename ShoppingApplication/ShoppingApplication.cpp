@@ -77,6 +77,7 @@ int main() {
 			// Toggle main menu off.
 			mainMenu.active = false;
 		}
+		programState = false;
 	}
 	return 0;
 }
