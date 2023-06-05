@@ -73,7 +73,7 @@ public:
                 const Product& selectedProduct = mainMenu.items[selectedOption];
                 
                 // !! Trying to get the quantity of requested item !!
-                int selectedOption = getUserInput("How many: ", inputValidationRegex);
+                selectedOption = getUserInput("How many: ", inputValidationRegex);
 
                 mainMenu.items[selectedOption].quantity -= 1;
                 // Perform actions based on the selected product (e.g., add to cart, update quantity, etc.)
@@ -81,7 +81,7 @@ public:
                 mainMenu.active = false;
             }
 
-            std::cout << "Do you want to by another item?" << std::endl;
+            std::cout << "Do you want to buy another item?" << std::endl;
             int selectedOption = getUserInput("Enter your choice: ", inputValidationRegex);
             switch (selectedOption)
             {
